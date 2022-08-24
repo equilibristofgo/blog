@@ -1,3 +1,9 @@
 [submodule "themes/ananke"]
 	path = themes/ananke
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "sandbox"]
+	path = sandbox
+	url = https://github.com/equilibristofgo/sandbox.git
+[submodule "tooling"]
+	path = tooling
+	url = https://github.com/equilibristofgo/tooling.git
