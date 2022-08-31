@@ -33,7 +33,7 @@ Por tanto pense que podia intentar llevar esa técnica a este marco, intentar pl
 ## Como contribuir
 
 La idea que, yo, tengo en la cabeza es la siguiente.
-- En el chat nos vamos expresando libremente (eso si, bajo un [código de conducta](../../CODE_OF_CONDUCT.md), nada nuevo en la comunidad, con algunos puntos extra)
+- En el chat nos vamos expresando libremente (eso si, bajo un [código de conducta](https://github.com/equilibristofgo/blog/blob/main/CODE_OF_CONDUCT.md), nada nuevo en la comunidad, con algunos puntos extra)
 - Del chat, surgirán temas que se deberían materializar en la proxima entrada "draft" del blog (via PR)
 - Una vez que se tenga material, o haya pasado un tiempo prudencial se acuerda dia y hora (o incluso se especifica una previamente marcada en la semana, aunque no tengamos que tener reunion todas las semanas, ni meses...)
 - El resultado de la charla, de voz, por el chat de telegram se subirá a la entrada del blog, y cada persona que hubiera preguntado, deberá cerrar la pregunta, añadiendo la respuesta o explicación detallada.
@@ -58,7 +58,7 @@ Respecto al código de conducta [elijo el estándar](https://www.contributor-cov
 
 ### Sandbox
 
-Montar un repo [sandbox](https://github.com/equilibristofgo/tooling), que pueda servir de apoyo a las cuestiones que se planteen, donde se monten pequeños ejemplos que sirvan de soporte a la discusión y muestren finalmente las conclusiones.
+Montar un repo [sandbox](https://github.com/equilibristofgo/sandbox), que pueda servir de apoyo a las cuestiones que se planteen, donde se monten pequeños ejemplos que sirvan de soporte a la discusión y muestren finalmente las conclusiones.
 
 ### Tooling
 

@@ -1,6 +1,6 @@
 ---
 title: "First Lightning Talk"
-date: 2022-08-31T23:00:00+02:00
+date: 2022-09-13T19:00:00+02:00
 draft: true
 ---
 
@@ -30,7 +30,7 @@ Parece estar de moda que los logs sean "contextuales", vamos que los atributos n
     https://github.com/uber-go/zap/issues/654
     https://stackoverflow.com/questions/70512120/how-to-access-fields-in-zap-hooks
 
-- Ejemplos de codigo [aqui](sanbox/01_bridge_logging/README.md)
+- Ejemplos de codigo [aqui](https://github.com/equilibristofgo/sandbox/tree/main/01_bridge_logging/README.md)
 
 ## ¿Echo o chi? 
 ¿Tomcat o jetty? La idea a tratar aqui es como condiciona mi desarrollo la eleccion de un framework u otro.
@@ -39,7 +39,7 @@ Parece estar de moda que los logs sean "contextuales", vamos que los atributos n
 - ¿Abstracción de framework web en GO? 
 - ¿Contexto específico y add-ons? 
 - ¿Middeleware intercambiables?
-- Ejemplos de codigo [aqui](sanbox/02_echo_chi/README.md)
+- Ejemplos de codigo [aqui](https://github.com/equilibristofgo/sandbox/tree/main/02_echo_chi/README.md)
 
 ## Go mod con replace y dependencias "locales"... 
 Si en mi proyecto tengo un go.mod con replace de unas librerías personalizadas...
