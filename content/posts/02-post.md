@@ -1,6 +1,6 @@
 ---
-title: "First Lightning Talk"
-date: 2022-08-31T23:00:00+02:00
+title: "Second Lightning Talk"
+date: 2022-09-27T19:00:00+02:00
 draft: true
 ---
 
