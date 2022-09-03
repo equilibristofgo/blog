@@ -24,7 +24,7 @@ Parece estar de moda que los logs sean "contextuales", vamos que los atributos n
 - ¿fecha completa?
 - ¿busqueda en google cloud?
 - ¿cambia la manera de redactar el log por añadir los "parámetros" al contexto json?
-- Impresion de parametros dentro de esos json [un ejemplo](https://golangbyexample.com/print-struct-variables-golang/) y [otro](https://gosamples.dev/print-struct-variables/)
+- Impresión de parámetros dentro de esos json [un ejemplo](https://golangbyexample.com/print-struct-variables-golang/) y [otro](https://gosamples.dev/print-struct-variables/)
 
 - wrappers para logger que redirija la salida de unos a otros? Tipo los Bridge de slf4j?
     https://github.com/uber-go/zap/issues/654

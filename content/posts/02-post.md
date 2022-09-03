@@ -22,11 +22,11 @@ draft: true
 
 ## Introducción a cgo
 ## Librerías fhe
-## Aplicacion para voto de día en el que quedar
+## Aplicación para voto de día en el que quedar
 - https://github.com/josejuanmontiel/lattigo-polls-demo
 
 ## Gopls y los monorepos (con VSCode y muchos módulos Bazel y uno solo go.mod)
-Cuando tu proyecto es un monorepo gigante, todo empieza a ralentizarse ¿porque?. La idea es tratar como se comporta el IDE (que en el caso de GoLang) suele delegar en Gopls.
+Cuando tu proyecto es un monorepo gigante, todo empieza a ralentizarse ¿por que?. La idea es tratar como se comporta el IDE (que en el caso de GoLang) suele delegar en Gopls.
 
 - ¿que hace Gopls cuando escanea un monorepo? 
 - ¿como se parametriza el ide para ese escaneo?

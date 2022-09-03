@@ -30,7 +30,7 @@ Resumiendo, que creo en que escribir (como mas cómodo te sea) aquello que vas a
 
 Por tanto pense que podia intentar llevar esa técnica a este marco, intentar plasmar en un blog, parte de lo que saliera de ese chat. Me dio por elegir [Hugo](https://gohugo.io/) porque estaba echo en GoLang.
 
-## Como contribuir
+## Cómo contribuir
 
 La idea que, yo, tengo en la cabeza es la siguiente.
 - En el chat nos vamos expresando libremente (eso si, bajo un [código de conducta](https://github.com/equilibristofgo/blog/blob/main/CODE_OF_CONDUCT.md), nada nuevo en la comunidad, con algunos puntos extra)

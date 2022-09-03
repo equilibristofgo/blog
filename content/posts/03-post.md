@@ -14,7 +14,7 @@ draft: true
 - https://github.com/intercloud/venom/tree/executor-tavern/executors/tavern
 - Repasar de la libreria de http la parte de mockear las llamadas... (habia algo parecido en algun proyecto "español"?)
 
-## Paqueteria internal
+## Paquetería interna
 - https://stackoverflow.com/questions/59342373/use-of-internal-package-not-allowed
     - https://go.dev/doc/go1.4#internalpackages
     - https://pkg.go.dev/cmd/go#hdr-Internal_Directories
