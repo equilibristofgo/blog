@@ -40,6 +40,7 @@ Parece estar de moda que los logs sean "contextuales", vamos que los atributos n
 - ¿Contexto específico y add-ons? 
 - ¿Middeleware intercambiables?
 - Ejemplos de codigo [aqui](https://github.com/equilibristofgo/sandbox/tree/main/02_echo_chi/README.md)
+- Las redes [batalla de frameworks](https://twitter.com/preslavrachev/status/1557739724286349312)
 
 ## Go mod con replace y dependencias "locales"... 
 Si en mi proyecto tengo un go.mod con replace de unas librerías personalizadas...

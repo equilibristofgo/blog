@@ -19,6 +19,10 @@ https://cadenceworkflow.io/docs/get-started/golang-hello-world/
 
 ## Arquitectura hexagonal
 https://github.com/Arkiant/freegames
+https://github.com/looplab/eventhorizon
+### Injeccion de dependencias
+https://pkg.go.dev/go.uber.org/fxLibreria 
+
 
 ## Ebiten
 https://ebiten.org/

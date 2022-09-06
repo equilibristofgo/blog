@@ -21,6 +21,10 @@ draft: true
     - https://eli.thegreenplace.net/2020/embedding-in-go-part-3-interfaces-in-structs/
 
 ## Introducción a cgo
+TemasCompilacion cruzada windows desde linux con cgo
+https://dh1tw.de/2019/12/cross-compiling-golang-cgo-projects/ 
+
+
 ## Librerías fhe
 ## Aplicación para voto de día en el que quedar
 - https://github.com/josejuanmontiel/lattigo-polls-demo
@@ -32,3 +36,5 @@ Cuando tu proyecto es un monorepo gigante, todo empieza a ralentizarse ¿por que
 - ¿como se parametriza el ide para ese escaneo?
 - Si ademas el proyecto usa Bazel como se comporta el deamon ante los cambios que hace el IDE/¿gopls?
 - ¿Que integracion LSP/Gopls tiene bazel daemon con VSCode?
+
+https://microsoft.github.io/language-server-protocol/ 
