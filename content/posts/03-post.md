@@ -1,6 +1,6 @@
 ---
 title: "Third Lightning Talk"
-date: 2022-10-11T19:00:00+02:00
+date: 2022-10-04T19:00:00+02:00
 draft: true
 ---
 
@@ -12,7 +12,8 @@ draft: true
 
 ## Testing api rest
 - https://github.com/intercloud/venom/tree/executor-tavern/executors/tavern
-- Repasar de la libreria de http la parte de mockear las llamadas... (habia algo parecido en algun proyecto "español"?)
+- Repasar de la libreria de http la parte de mockear las llamadas...
+    -  https://github.com/friendsofgo/killgrave 
 
 ## Paquetería interna
 - https://stackoverflow.com/questions/59342373/use-of-internal-package-not-allowed
