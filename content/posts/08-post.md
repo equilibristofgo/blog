@@ -4,7 +4,7 @@ date: 2022-12-20T19:00:00+02:00
 draft: true
 ---
 
-# Temas a tratar en la sesión 06
+# Temas a tratar en la sesión 08
 
 ## pointer-recivers
 https://flaviocopes.com/golang-methods-receivers/

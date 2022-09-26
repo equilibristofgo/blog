@@ -4,7 +4,7 @@ date: 2022-12-06T19:00:00+02:00
 draft: true
 ---
 
-# Temas a tratar en la sesión 06
+# Temas a tratar en la sesión 07
 
 ## MachineLearning
 https://docs.huihoo.com/go/fast-and-scalable-machine-learning-with-golang.pdf
