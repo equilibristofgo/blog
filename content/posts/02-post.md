@@ -1,7 +1,6 @@
 ---
 title: "Second Lightning Talk"
 date: 2022-09-27T19:00:00+02:00
-draft: true
 ---
 
 # Temas a tratar en la segunda sesión
@@ -9,7 +8,7 @@ draft: true
 ## Uso del contexto
 En Golang, la manera de poder compartir valores a lo largo del proceso, y que distintos hilos no mezclen valores es el uso del contexto.
 
-En Java, por ejemplo, tenemos el ThreadLocal un objeto qeu la JVM nos proporciona durante el flujo de ejecucion para alvergar esos valores.
+En Java, por ejemplo, tenemos el ThreadLocal un objeto qeu la JVM nos proporciona durante el flujo de ejecución para albergar esos valores.
 
 En el caso de Go, el objeto esta preparado para que sea "thread-safe" y de alguna manera se apilan los valores que se van guardando.
 
@@ -20,22 +19,22 @@ En el caso de Go, el objeto esta preparado para que sea "thread-safe" y de algun
     - https://www.calhoun.io/pitfalls-of-context-values-and-how-to-avoid-or-mitigate-them/
 
 ### Ejemplos de código 
-- [Aqui]()
+- [Aqui]](https://github.com/equilibristofgo/sandbox/tree/main/06_context/README.md)
 
 ## Interface en struct y extensión de clases
-En el mundo clasico de la orientacion a objetos, por ejemplo en Java, una interfaz de fine los metodos de una clase que se deben implementar para cumplir con esa interfaz. Y si una clase extiende a otra, esta hereda los metodos que tenga implementados la clase padre.
+En el mundo clásico de la orientación a objetos, por ejemplo en Java, una interfaz define los métodos de una clase que se deben implementar para cumplir con esa interfaz. Y si una clase extiende a otra, esta hereda los métodos que tenga implementados la clase padre.
 
-En Golang, si un struct (clase) implementa (entre otros) los metodos de una interfaz, entonces podemos usar ese struct alla donde la interfaz, pero si añadimos la interfaz dentro del struct, entonces de alguna manera extendemos ademas las implementaciones de la interfaz que hemos añadido.
+En Golang, si un struct (clase) implementa (entre otros) los métodos de una interfaz, entonces podemos usar ese struct allá donde la interfaz, pero si añadimos la interfaz dentro del struct, entonces de alguna manera extendemos ademas las implementaciones de la interfaz que hemos añadido.
 
 - Links a organizar
-    - https://www.talkgolang.com/2021/05/08/extend-packages/
     - https://eli.thegreenplace.net/2020/embedding-in-go-part-3-interfaces-in-structs/
+    - https://www.talkgolang.com/2021/05/08/extend-packages/
 
 ### Ejemplos de código 
-- [Aqui]()
+- [Aqui]](https://github.com/equilibristofgo/sandbox/tree/main/07_embedding_interface/README.md)
 
 ## Visibilidades dentro y fuera de un paquete para los atributos
-- La cuestion aqui esta en que atributos de una clase son privados o publicos
+- La cuestión aqui esta en que atributos de una clase son privados o públicos
 
     t.Run(tt.name, func(t *testing.T) {
         h := serverHttp.ExampleStruct{

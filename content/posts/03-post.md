@@ -1,7 +1,6 @@
 ---
 title: "Third Lightning Talk"
 date: 2022-10-11T19:00:00+02:00
-draft: true
 ---
 
 # Temas a tratar en la tercera sesión
@@ -25,7 +24,7 @@ Como ejemplo de proxy, realizado por la comunidad, tenemos a parte de los clasic
 
 - Links a organizar
     - https://github.com/intercloud/venom/tree/executor-tavern/executors/tavern
-    -  https://github.com/friendsofgo/killgrave 
+    - https://github.com/friendsofgo/killgrave 
 
 ### Ejemplos de código 
 - [Aqui]()
