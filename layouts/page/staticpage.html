@@ -1,0 +1,16 @@
+{{ define "header" }}{{ partial "page-header.html" . }}{{ end }}
+{{ define "main" }}
+<section>
+  <h2>{{ .Title }}</h2>
+  {{ .Content }}
+</section>
+
+<div id="app"></div>
+
+<script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+{{ $app := resources.Get "scripts/contact/app.jsx" | resources.ExecuteAsTemplate "app.js" . | babel  }}
+<script src="{{ $app.RelPermalink }}"></script>
+
+{{ end }}
+
