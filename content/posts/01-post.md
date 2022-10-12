@@ -14,6 +14,12 @@ La idea a tratar aquí es: bajo el punto de vista del testing en GoLang, testing
 - ¿Un test unitario, se considera unitario si recorre todas las capas?
 - ¿Qué dificultades plantean las capas? ¿transformaciones de modelos?
 
+### Durante la charla
+* Surge la pregunta de si los modelos deben quedarse visibles solo dentro de cada capa...
+* También se comenta que el objetivo de los unitarios es probar cada capa, y asi por partes debemos probar todo
+* Pero por otro lado, los test hay que mantenerlos y si con solo uno lo pruebas todo, pues te quitas trabajo de mantenimiento.
+* Resumen, valen los dos puntos de vista, con sus pros y sus contras.
+
 ### Ejemplos de código 
 * https://github.com/quii/learn-go-with-tests
     * https://quii.gitbook.io/learn-go-with-tests/
@@ -38,6 +44,9 @@ Parece estar de moda que los logs sean "contextuales", vamos que los atributos n
 - ¿busqueda en google cloud?
 - ¿cambia la manera de redactar el log por añadir los "parámetros" al contexto json?
 
+### Durante la charla
+* Comentan que no las conocian y que si asi se aligeran las busquedas en Kibana o similar, pues bienvenidos.
+
 ### Ejemplos de código 
 - Impresión de parámetros dentro de esos json [un ejemplo](https://golangbyexample.com/print-struct-variables-golang/) y [otro](https://gosamples.dev/print-struct-variables/)
 
@@ -57,6 +66,10 @@ Parece estar de moda que los logs sean "contextuales", vamos que los atributos n
 - ¿Contexto específico y add-ons? 
 - ¿Middeleware intercambiables?
 
+### Durante la charla
+* Se comentam que es preferible usar framework a reinventar la rueda cada vez, pero que la falta de servidores estandarizados en Go, hace que todos los frameworks traigan muchas caracteristicas similares implementadas de distintas formas cada uno.
+* Tambien se comenta, que una manera de enfocar el poder abstraerse en los handler ... es modelar las funcionalidades de tu aplicacion de tal forma, que se puedan separar de la parte controladora y asi podamos facilmente intercambiarla.
+
 ### Ejemplos de código
 - [Aquí](https://github.com/equilibristofgo/sandbox/tree/main/02_echo_chi/README.md)
 - Las redes [batalla de frameworks](https://twitter.com/preslavrachev/status/1557739724286349312)
@@ -72,13 +85,7 @@ Parece estar de moda que los logs sean "contextuales", vamos que los atributos n
 ### Para tratar más adelante... pero comentamos de pasada
 https://github.com/chris-crone/containerized-go-dev
 
-## Breves
-
-### code generator
-- [swagger-codegen](https://github.com/swagger-api/swagger-codegen)
-- [https://morioh.com/p/90906ca5c28e]()
-- [https://github.com/mirzaakhena/zapp]()
-
-### ides en go
-[editor](https://github.com/jmigpin/editor)
-[fynedesk no es un ide, pero es interesante](https://github.com/fyne-io/fynedesk)
+## Grabacion de la sesion
+Con fallo de principiante, solo no grabe el audio del resto, solo el que salia de mi equipo.
+- https://www.youtube.com/watch?v=yS1d4oQW66k
+- https://www.ivoox.com/podcast-equilibrist-of-go_sq_f11669874_1.html

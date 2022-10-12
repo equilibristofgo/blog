@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "./static/css/main.922df910.css",
+    "main.js": "./static/js/main.2ca0b245.js",
+    "livekit.html": "./livekit.html",
+    "main.922df910.css.map": "./static/css/main.922df910.css.map",
+    "main.2ca0b245.js.map": "./static/js/main.2ca0b245.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.922df910.css",
+    "static/js/main.2ca0b245.js"
+  ]
+}

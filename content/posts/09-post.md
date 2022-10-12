@@ -4,7 +4,7 @@ date: 2023-01-03T19:00:00+02:00
 draft: true
 ---
 
-# Temas a tratar en la sesión 06
+# Temas a tratar en la sesión 09
 
 ## string pointers
 https://dhdersch.github.io/golang/2016/01/23/golang-when-to-use-string-pointers.html
