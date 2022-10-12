@@ -1,0 +1,57 @@
+<!doctype html><html lang=es-es><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge,chrome=1"><title>Livekit and Telegram Bot | Equilibrist of Go Blog</title><meta name=viewport content="width=device-width,minimum-scale=1"><meta name=description content="Livekit and Telegram Bot Livekit Hace ya bastante tiempo se definio un estandar WebRTC y haciendo uso de ese estandar aparece Livekit que haciendo uso de la estupenda librearia Pion WebRTC.
+Si una vez instalado arrancamos con la configuracion
+Basicamente queda
+livekit-server --dev --config config-sample.yml Y la configuracion deberia ser
+port: 7880 rtc: port_range_start: 50000 port_range_end: 50100 tcp_port: 7881 use_external_ip: true keys: devkey: secret Hay que tener en cuenta, que la comunicacion se hace usando websocket por lo que para exponer el puerto 7880 desde un servidor al exterior debemos usar un proxy reverso."><meta name=generator content="Hugo 0.104.3"><meta name=robots content="noindex, nofollow"><link rel=stylesheet href=/blog/ananke/css/main.min.css><meta property="og:title" content="Livekit and Telegram Bot"><meta property="og:description" content="Livekit and Telegram Bot Livekit Hace ya bastante tiempo se definio un estandar WebRTC y haciendo uso de ese estandar aparece Livekit que haciendo uso de la estupenda librearia Pion WebRTC.
+Si una vez instalado arrancamos con la configuracion
+Basicamente queda
+livekit-server --dev --config config-sample.yml Y la configuracion deberia ser
+port: 7880 rtc: port_range_start: 50000 port_range_end: 50100 tcp_port: 7881 use_external_ip: true keys: devkey: secret Hay que tener en cuenta, que la comunicacion se hace usando websocket por lo que para exponer el puerto 7880 desde un servidor al exterior debemos usar un proxy reverso."><meta property="og:type" content="article"><meta property="og:url" content="https://equilibristofgo.github.io/blog/posts/livekit_telegram/"><meta property="article:section" content="posts"><meta property="article:published_time" content="2022-10-12T19:00:00+02:00"><meta property="article:modified_time" content="2022-10-12T19:00:00+02:00"><meta itemprop=name content="Livekit and Telegram Bot"><meta itemprop=description content="Livekit and Telegram Bot Livekit Hace ya bastante tiempo se definio un estandar WebRTC y haciendo uso de ese estandar aparece Livekit que haciendo uso de la estupenda librearia Pion WebRTC.
+Si una vez instalado arrancamos con la configuracion
+Basicamente queda
+livekit-server --dev --config config-sample.yml Y la configuracion deberia ser
+port: 7880 rtc: port_range_start: 50000 port_range_end: 50100 tcp_port: 7881 use_external_ip: true keys: devkey: secret Hay que tener en cuenta, que la comunicacion se hace usando websocket por lo que para exponer el puerto 7880 desde un servidor al exterior debemos usar un proxy reverso."><meta itemprop=datePublished content="2022-10-12T19:00:00+02:00"><meta itemprop=dateModified content="2022-10-12T19:00:00+02:00"><meta itemprop=wordCount content="462"><meta itemprop=keywords content><meta name=twitter:card content="summary"><meta name=twitter:title content="Livekit and Telegram Bot"><meta name=twitter:description content="Livekit and Telegram Bot Livekit Hace ya bastante tiempo se definio un estandar WebRTC y haciendo uso de ese estandar aparece Livekit que haciendo uso de la estupenda librearia Pion WebRTC.
+Si una vez instalado arrancamos con la configuracion
+Basicamente queda
+livekit-server --dev --config config-sample.yml Y la configuracion deberia ser
+port: 7880 rtc: port_range_start: 50000 port_range_end: 50100 tcp_port: 7881 use_external_ip: true keys: devkey: secret Hay que tener en cuenta, que la comunicacion se hace usando websocket por lo que para exponer el puerto 7880 desde un servidor al exterior debemos usar un proxy reverso."></head><body class="ma0 avenir bg-near-white"><header><div class=bg-black><nav class="pv3 ph3 ph4-ns" role=navigation><div class="flex-l justify-between items-center center"><a href=/blog/ class="f3 fw2 hover-white no-underline white-90 dib">Equilibrist of Go Blog</a><div class="flex-l items-center"><div class=ananke-socials></div></div></div></nav></div></header><main class=pb7 role=main><article class="flex-l flex-wrap justify-between mw8 center ph3"><header class="mt4 w-100"><aside class="instapaper_ignoref b helvetica tracked">POSTS</aside><div id=sharing class="mt3 ananke-socials"></div><h1 class="f1 athelas mt3 mb1">Livekit and Telegram Bot</h1><time class="f6 mv4 dib tracked" datetime=2022-10-12T19:00:00+02:00>October 12, 2022</time></header><div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id=livekit-and-telegram-bot>Livekit and Telegram Bot</h1><h2 id=livekit>Livekit</h2><p>Hace ya bastante tiempo se definio un estandar <a href=https://webrtc.org/>WebRTC</a> y haciendo uso de ese estandar aparece <a href=https://docs.livekit.io/guides/how-it-works/>Livekit</a> que haciendo uso de la estupenda librearia <a href=https://github.com/pion/webrtc>Pion WebRTC</a>.</p><p>Si una vez <a href=https://docs.livekit.io/guides/getting-started/>instalado</a> arrancamos con la <a href=https://docs.livekit.io/deploy/>configuracion</a></p><p>Basicamente queda</p><pre><code>livekit-server --dev --config config-sample.yml
+</code></pre><p>Y la configuracion deberia ser</p><pre><code>port: 7880
+rtc:
+    port_range_start: 50000
+    port_range_end: 50100
+    tcp_port: 7881
+    use_external_ip: true
+keys:
+    devkey: secret
+</code></pre><p>Hay que tener en cuenta, que la comunicacion se hace usando <a href=https://blog.friendsofgo.tech/posts/introduccion-a-los-websockets-en-go/>websocket</a> por lo que para exponer el puerto 7880 desde un servidor al exterior debemos usar un proxy reverso.</p><p>Si nos centramos en apache tenemos varias (<a href=https://www.serverlab.ca/tutorials/linux/web-servers-linux/how-to-reverse-proxy-websockets-with-apache-2-4/>una</a>, <a href=https://kevingimbel.de/blog/2021/06/proxy-websocket-connections-with-apache2/>dos</a> y <a href=https://gist.github.com/mortenege/91ec6fe02dca6f736303a00f8cea2731>tres</a> opciones de configuracion&mldr; y deberia quedar algo asi</p><pre><code>&lt;VirtualHost *:443&gt;
+    ServerName livekit.domain.com
+    SSLEngine On
+
+    RewriteEngine On
+    RewriteCond %{HTTP:Upgrade} websocket [NC]
+    RewriteCond %{HTTP:Connection} upgrade [NC]
+    RewriteRule ^/?(.*) &quot;ws://127.0.0.1:7880/$1&quot; [P,L]
+
+    ProxyPreserveHost On
+    ProxyPass / ws://127.0.0.1:7880/
+    ProxyPassReverse / ws://127.0.0.1:7800/
+    ProxyRequests off
+
+    DocumentRoot /var/www/domain/livekit
+    DirectoryIndex index.html
+
+    ErrorLog /var/log/apache2/error-livekit-domain.log
+    CustomLog /var/log/apache2/access-livekit-domain.log combined
+
+    Header always set Access-Control-Allow-Origin &quot;*&quot;
+    Header always set Access-Control-Allow-Headers &quot;Authorization&quot;
+    Header always set Access-Control-Allow-Methods &quot;GET&quot;
+    Header always set Access-Control-Expose-Headers &quot;Content-Security-Policy, Location&quot;
+    Header always set Access-Control-Max-Age &quot;600&quot;
+
+    SSLCertificateFile /etc/letsencrypt/live/livekit.domain.com/fullchain.pem
+    SSLCertificateKeyFile /etc/letsencrypt/live/livekit.domain.com/privkey.pem
+    Include /etc/letsencrypt/options-ssl-apache.conf
+&lt;/VirtualHost&gt;
+</code></pre><p>y esto incluye los certificados ssl para securizarlo&mldr; porque, a parte de hacer un mapeo de puertos al exterior (en el ejemplo 7881 y 7882, no estoy 100% seguro pero si que seguro los 50000-50100) al estilo de como cuentan <a href=https://docs.livekit.io/deploy/ports-firewall/#firewall>aqui</a></p><p>Una vez configurada la parte servidora, tenemos que montar un <a href=https://github.com/livekit/livekit-react/tree/master/example>frontal</a></p><p>Com bola extra, estaria preparado para usar TURN (resumido, averiguar tu IP)&mldr; en <a href=https://bloggeek.me/webrtc-turn/>este articulo</a> cuentan de que van los <a href=https://webrtc.org/getting-started/turn-server>turn server</a></p><h2 id=telegram-bot>Telegram Bot</h2><p>Para montar un bot de telegram en Go, hay <a href=https://core.telegram.org/bots/samples#go>muchas</a> opciones disponibles.</p><p>Una de las mas interesantes es esta con <a href=https://go-telegram-bot-api.dev/>go-telegram-bot-api</a> que deja todo el tratamiento <a href=https://github.com/go-telegram-bot-api/telegram-bot-api#example>muy conciso</a></p><p>Otras opciones pueden ser <a href=https://github.com/tucnak/telebot>esta</a> y <a href=https://github.com/fpaupier/telegrap>esta</a> que tiene una explicacion <a href=https://medium.com/swlh/build-a-telegram-bot-in-go-in-9-minutes-e06ad38acef1>muy detallada</a> incluso detalla la parte del despliegue del <a href=https://core.telegram.org/bots/webhooks#the-longer-version>webhook</a></p><p>Ah, por cierto, la primera opcion de codigo&mldr; hace pooling, con lo que no necesitas exponer un webhook como tal, en la segunda describen como hacer con la parte del webhook.</p><p>Lo que me ha llevado a descubrir un par de &ldquo;webhook&rdquo; interesantes</p><ul><li><a href=https://github.com/voxpupuli/webhook-go>Este</a></li><li>Y <a href=https://httpd.apache.org/docs/2.4/developer/hooks.html>este otro</a>
+son cosas para investigar.</li></ul><p>El bot, simplemente recibe el comando y hace uso del codigo de <a href=https://github.com/livekit/livekit-cli>livekit-cli</a> para generar un token valido, y construye una url de conexion con los datos necesarios para conectarse al livekit.</p><h3 id=ejemplos-de-código>Ejemplos de código</h3><ul><li><p><a href=https://github.com/equilibristofgo/sandbox/tree/main/08_telegram/README.md>Aqui</a></p><p>Respecto al codigo, es muy basico&mldr; usa variables de entorno para el token de Telegram y para la key y la secret de Livekit.</p></li></ul><h2 id=obs-broadcaster>Obs Broadcaster</h2><p>Y finalmente para la grabacion de todo el conjunto, la mejor herramienta es <a href=https://obsproject.com/>OBS Studio</a></p><h2 id=grabacion-de-la-sesion>Grabacion de la sesion</h2><p>Con fallo de principiante, solo no grabe el audio del resto, solo el que salia de mi equipo.</p><ul><li><a href=https://www.youtube.com/>https://www.youtube.com/</a>&mldr;</li><li><a href=https://www.ivoox.com/>https://www.ivoox.com/</a>&mldr;</li></ul><ul class=pa0></ul><div class="mt6 instapaper_ignoref"></div></div><aside class="w-30-l mt6-l"></aside></article></main><footer class="bg-black bottom-0 w-100 pa3" role=contentinfo><div class="flex justify-between"><a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href=https://equilibristofgo.github.io/blog>&copy; Equilibrist of Go Blog 2022</a><div><div class=ananke-socials></div></div></div></footer></body></html>
