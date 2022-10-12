@@ -1,6 +1,6 @@
 ---
 title: "Second Lightning Talk"
-date: 2022-09-27T19:00:00+02:00
+date: 2022-10-12T19:00:00+02:00
 ---
 
 # Temas a tratar en la segunda sesión
@@ -19,7 +19,7 @@ En el caso de Go, el objeto esta preparado para que sea "thread-safe" y de algun
     - https://www.calhoun.io/pitfalls-of-context-values-and-how-to-avoid-or-mitigate-them/
 
 ### Ejemplos de código 
-- [Aqui]](https://github.com/equilibristofgo/sandbox/tree/main/06_context/README.md)
+- [Aqui](https://github.com/equilibristofgo/sandbox/tree/main/06_context/README.md)
 
 ## Interface en struct y extensión de clases
 En el mundo clásico de la orientación a objetos, por ejemplo en Java, una interfaz define los métodos de una clase que se deben implementar para cumplir con esa interfaz. Y si una clase extiende a otra, esta hereda los métodos que tenga implementados la clase padre.
@@ -31,7 +31,7 @@ En Golang, si un struct (clase) implementa (entre otros) los métodos de una int
     - https://www.talkgolang.com/2021/05/08/extend-packages/
 
 ### Ejemplos de código 
-- [Aqui]](https://github.com/equilibristofgo/sandbox/tree/main/07_embedding_interface/README.md)
+- [Aqui](https://github.com/equilibristofgo/sandbox/tree/main/07_embedding_interface/README.md)
 
 ## Visibilidades dentro y fuera de un paquete para los atributos
 - La cuestión aqui esta en que atributos de una clase son privados o públicos
