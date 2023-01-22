@@ -72,5 +72,7 @@ Como podemos compilar nativo o para webassembly... y ademas como podemos compila
     - https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/WinSock/windows-sockets-1-1-blocking-routines-and-einprogress-2.md
     - https://medium.com/a-journey-with-go/go-builds-linkers-timeline-b312084ddf7d
 
+    - https://blog.modest-destiny.com/posts/building-golang-cgo-with-bazel/
+
 ### Ejemplos de código 
 - [Aqui]()

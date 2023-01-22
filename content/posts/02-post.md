@@ -75,3 +75,13 @@ Cuando tu proyecto es un monorepo gigante, todo empieza a ralentizarse ¿por que
 ### ides en go
 - [editor](https://github.com/jmigpin/editor)
 - [fynedesk no es un ide, pero es interesante](https://github.com/fyne-io/fynedesk)
+
+https://github.com/jmigpin/editor
+https://github.com/zyedidia/micro
+https://github.com/bediger4000/kilo-in-go/blob/master/kilo.go
+https://github.com/stretto-editor/stretto
+https://github.com/limetext/lime
+
+Retomar emacs
+https://geeksocket.in/posts/emacs-lsp-go/ 
+https://dr-knz.net/a-tour-of-emacs-as-go-editor.html
