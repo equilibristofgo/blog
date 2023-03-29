@@ -7,7 +7,7 @@ licenselink = "https://github.com/theNewDynamic/gohugo-theme-ananke/blob/master/
 description = "A Base theme for building full featured Hugo sites"
 homepage = "https://github.com/theNewDynamic/gohugo-theme-ananke"
 tags = ["website", "starter", "responsive", "Disqus", "blog", "Tachyons", "Multilingual", "Stackbit"]
-features = ["posts", "shortcodes", "related content", "comments"]
+features = ["posts", "pr", "shortcodes", "related content", "comments"]
 min_version = "0.84.0"
 
 [author]

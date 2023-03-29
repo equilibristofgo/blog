@@ -1,6 +1,6 @@
 ---
 title: "Second Lightning Talk"
-date: 2022-10-12T19:00:00+02:00
+date: 2023-03-28T19:00:00+02:00
 ---
 
 # Temas a tratar en la segunda sesión
@@ -8,7 +8,7 @@ date: 2022-10-12T19:00:00+02:00
 ## Uso del contexto
 En Golang, la manera de poder compartir valores a lo largo del proceso, y que distintos hilos no mezclen valores es el uso del contexto.
 
-En Java, por ejemplo, tenemos el ThreadLocal un objeto qeu la JVM nos proporciona durante el flujo de ejecución para albergar esos valores.
+En Java, por ejemplo, tenemos el ThreadLocal un objeto que la JVM nos proporciona durante el flujo de ejecución para albergar esos valores.
 
 En el caso de Go, el objeto esta preparado para que sea "thread-safe" y de alguna manera se apilan los valores que se van guardando.
 
@@ -47,7 +47,7 @@ En Golang, si un struct (clase) implementa (entre otros) los métodos de una int
 - [Aqui]()
 
 ## Gopls y los monorepos (con VSCode y muchos módulos Bazel y uno solo go.mod)
-Cuando tu proyecto es un monorepo gigante, todo empieza a ralentizarse ¿por que?. La idea es tratar como se comporta el IDE (que en el caso de GoLang) suele delegar en Gopls.
+Cuando tu proyecto es un monorepo gigante, todo empieza a ralentizarse ¿por que?. La idea es tratar de ver como se comporta el IDE (que en el caso de GoLang) suele delegar en Gopls.
 
 - ¿que hace Gopls cuando escanea un monorepo? 
 - ¿como se parametriza el ide para ese escaneo?
