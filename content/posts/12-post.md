@@ -1,6 +1,6 @@
 ---
 title: "12º Lightning Talk"
-date: 2023-02-14T19:00:00+02:00
+date: 2030-01-01T19:00:00+02:00
 draft: true
 ---
 

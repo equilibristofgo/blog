@@ -1,0 +1,89 @@
+# Charla 1
+Recuperar (con subtitulos) los comentarios perdidos... de la charla
+Intentar responder a las preguntas realizadas
+
+# Charla 2
+
+# Charla 3
+
+
+# Temas a detallar en nuevos post
+Hacer prueba de concepto para validar la velocidad de regex o xml parse para identificar una "operacion" ... y luego ver tambien sobre la extraccion de campos... que no tiene "key"....
+
+# Tareas
+Livekit: siguiendo los pasos del blog montar la parte de grabaciones https://github.com/livekit/egress
+
+
+# NUEVOS TEMAS
++ :1 :2 :3 ...
+func sliceToTaskArgs(a []string) []tasks.Arg {
+	var args []tasks.Arg
+
+	for _, v := range a {
+		// args = append(args, tasks.Arg{
+		// 	Type:  "string",
+		// 	Value: v,
+		// })
+
+		value, _ := strconv.ParseInt(v, 10, 64)
+		args = append(args, tasks.Arg{
+			Type:  "int",
+			Value: value,
+		})
+	}
+
+	return args
+}
+
+## handler/middleware/body read/concurrencia/corutines
+https://blog.flexicondev.com/read-go-http-request-body-multiple-times
+https://github.com/labstack/echo/discussions/2205
+https://gist.github.com/kybernetyk/905496
+https://github.com/smallnest/go-web-framework-benchmark
+https://docs.gofiber.io/
+
+## Gorm cache
+https://github.com/go-gorm/gorm/issues/3489#issuecomment-695125366
+
+## Revisar si esta esto de genericos y servidor web
+https://ectobit.com/blog/custom-generic-go-http-handlers/
+https://hypirion.com/musings/type-safe-http-servers-in-go-via-generics
+https://github.com/hypirion/typed-http-server-in-go/
+
+### Mas sobre generico
+https://stackoverflow.com/questions/70358216/how-can-i-access-a-struct-field-with-generics-type-t-has-no-field-or-method
+
+## Revisar la parte de webrtc servers
+https://github.com/sinclairzx81/smoke
+https://httprelay.io/
+
+
+# NUEVAS INCORPORACIONES
+- Antiguos programadores en golang
+    - Alonso...
+    - Mario
+    - ¿Alex?
+    - Los de la entrevista de go de barcelona?
+- Telegram
+    - El otro grupo  hispano?
+- Meetups
+    - https://www.meetup.com/es-ES/golang-mallorca/
+    - https://www.meetup.com/es-ES/gophers-murcia/
+    - https://www.meetup.com/es-ES/valencia-go-meetup/
+    - https://www.meetup.com/es-ES/golang-barcelona/
+
+    https://www.meetup.com/es-ES/start/location?fromOrganizerLanding=true 
+    https://equilibristofgo.github.io/blog/posts/00-de-que-va-esto/
+
+
+
+## Livekit
+    https://github.com/livekit/livekit-cli
+    https://trac.ffmpeg.org/wiki/StreamingGuide
+    *** https://docs.livekit.io/guides/room/receive/
+    https://blog.livekit.io/an-introduction-to-webrtc-simulcast-6c5f1f6402eb/
+
+### Revisar links go... ¿cambios en los subscriber para recibir videos? 
+    https://docs.livekit.io/client/publish/ 
+    https://docs.livekit.io/client/receive/ 
+    https://github.com/livekit/livekit-react/blob/master/example/src/RoomPage.tsx

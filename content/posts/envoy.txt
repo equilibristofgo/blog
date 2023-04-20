@@ -1,0 +1,133 @@
+Istio
+	- https://github.com/tetratelabs/istio-0to60/tree/master/artifacts
+	- https://tetratelabs.github.io/istio-0to60/environment/#next
+
+	- https://istio.io/latest/docs/reference/config/proxy_extensions/wasm-plugin/#WasmPlugin
+	- https://istio.io/latest/docs/reference/config/networking/envoy-filter/
+
+
+Envoy
+
+	- HaProxy
+		- https://gist.github.com/cmer/e58e90dbf820a850ff4f136f85697be0
+		
+	- Tcp Proxy con envoy
+		- https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/network_filters/tcp_proxy_filter
+		- https://gist.github.com/int128/5b02bd1f9b7882aa6b48727b838e658e
+		
+	- Formacion de envoy
+		- https://academy.tetrate.io/courses/envoy-fundamentals
+
+		- https://tetrate.io/blog/get-started-with-envoy-in-5-minutes/
+		
+		- Procesado "externo/plugins go/..."
+			- https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/ext_proc_filter
+			- https://www.envoyproxy.io/docs/envoy/latest/configuration/http/http_filters/golang_filter
+				- https://www.envoyproxy.io/docs/envoy/latest/start/sandboxes/golang#install-sandboxes-golang
+				
+		- Debug
+			- wasm
+				- https://developer.chrome.com/blog/wasm-debugging-2020/
+				- https://github.com/wasm3/wasm-debug
+			- https://github.com/solo-io/squash
+			- bfptrace
+				- https://acalustra.com/envoy-wasm-debugging-with-bpftrace.html
+				- https://github.com/iovisor/bpftrace
+			- lldb
+				- https://lldb.llvm.org/use/remote.html
+				- https://github.com/vadimcn/vscode-lldb/blob/master/MANUAL.md
+				- https://www.youtube.com/watch?v=Ax5J_5fGFJk
+				- https://events.istio.io/istiocon-2021/slides/c4p-DevelopingDebuggingWasm-Idit-Yuval.pdf
+		
+		
+		- Learning
+			- https://github.com/asksven/learning-envoy
+		
+		- Control Pane
+			- https://www.envoyproxy.io/docs/envoy/latest/start/quick-start/configuration-dynamic-control-plane
+			- https://github.com/envoyproxy/go-control-plane/tree/main/internal/example
+		
+		
+		- WASM - Concurrency - tinygo
+			- https://tinygo.org/docs/reference/usage/important-options/
+			- https://aykevl.nl/2019/02/tinygo-goroutines
+				- https://github.com/WebAssembly/binaryen/blob/main/src/passes/Asyncify.cpp
+			- https://wazero.io/languages/#concurrency
+			- https://wazero.io/languages/tinygo/
+				
+		
+		- WASM
+			- https://docs.hippofactory.dev/
+			- https://www.fermyon.com/blog/introducing-spin
+			- https://github.com/tetratelabs/wazero
+			- https://github.com/wasmerio/wasmer-go
+
+		- CENTOS
+			- https://joeyb.org/posts/running-envoy-on-centos-6-or-centos-7/
+			- 
+		
+	
+		- BFF
+			*** https://github.com/imranismail/bff
+			- https://github.com/google/martian
+		
+		- Mock (soap)
+			- https://hub.docker.com/r/castlemock/castlemock
+				- https://github.com/castlemock/castlemock/wiki/Use-Case:-SOAP
+			- https://hub.docker.com/r/kennethreitz/httpbin/
+				- http://httpbin.org/#/Response_formats/get_xml		
+	
+		- Ejemlos con kafka...
+			- https://blog.christianposta.com/microservices/02-microservices-patterns-with-envoy-proxy-part-ii-timeouts-and-retries/
+			
+			- https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/network_filters/kafka_broker_filter.html
+			- https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/network_filters/kafka_broker_filter#config-network-filters-kafka-broker
+				- https://www.envoyproxy.io/docs/envoy/latest/start/install#install-contrib
+			- https://www.envoyproxy.io/docs/envoy/latest/start/sandboxes/kafka.html
+			
+			- https://www.slideshare.net/AdamKotwasinskiWorkd/envoy-and-kafka
+			- https://www.slideshare.net/KaiWaehner/service-mesh-with-apache-kafka-kubernetes-envoy-istio-and-linkerd
+	
+		- TODO
+			- Retomar el WASM (para yoigo tambien)
+				- https://qomarullah.medium.com/simple-proxy-based-on-body-request-3dd9ce262955
+				- https://hackernoon.com/writing-a-reverse-proxy-in-just-one-line-with-go-c1edfa78c84b
+				- https://github.com/ngurban/soap-proxy
+					- GOOS=js GOARCH=wasm go build -o main.wasm
+				- 
+				
+		
+			- Mirroring para emepzar a testear el nuevo desarrollo
+			- Retomar la parte de wasm para transformar
+			- Retries en la llamadas al exterior
+
+			- Prueba de llamada al exterior...
+				- https://github.com/tetratelabs/proxy-wasm-go-sdk/blob/main/examples/network/main_test.go
+				- https://github.com/tetratelabs/proxy-wasm-go-sdk/blob/main/examples/foreign_call_on_tick/main_test.go
+				* https://medium.com/trendyol-tech/extending-envoy-proxy-wasm-filter-with-golang-9080017f28ea
+				
+			- Ejemlos con kafka...
+				- https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/network_filters/kafka_broker_filter.html
+				- https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/network_filters/kafka_broker_filter#config-network-filters-kafka-broker
+					- https://www.envoyproxy.io/docs/envoy/latest/start/install#install-contrib
+				- https://www.envoyproxy.io/docs/envoy/latest/start/sandboxes/kafka.html
+				
+			- mysql/¿oracle?/postgres
+				- https://www.envoyproxy.io/docs/envoy/latest/configuration/listeners/network_filters/mysql_proxy_filter
+				- https://tetrate.io/blog/using-envoys-postgres-filter-for-network-observability/
+				
+			* https://tetrate.io/blog/what-is-istio-operator/
+				- https://istio.io/latest/docs/setup/install/operator/
+
+		- Envoy
+			- Servir certificados https
+				- https://farcaller.medium.com/how-to-configure-https-backends-in-envoy-b446727b2eb3
+
+
+
+		
+- Otros proxys
+	- https://codeberg.org/gruf/tcpee/src/branch/main
+	- https://gianarb.it/blog/golang-forwarding-proxy
+	- https://github.com/inetaf/tcpproxy/blob/master/cmd/tlsrouter/README.md
+	- https://github.com/jpillora/go-tcp-proxy

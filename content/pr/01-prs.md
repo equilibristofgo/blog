@@ -6,6 +6,20 @@ draft: true
 
 # Temas a desarrollar en las PRs
 
+## Gnet
+Compatibilidad con windows
+https://github.com/panjf2000/gnet/issues/339#issuecomment-1112291076
+https://github.com/panjf2000/gnet/compare/dev...josejuanmontiel:gnet:interface_refactor
+
+Ejemplos de red en windows...
+    - https://github.com/golang/net/blob/master/nettest/nettest_windows.go
+    - https://github.com/rogchap/networking/blob/master/02/digger.go
+    - https://pkg.go.dev/golang.org/x/sys/windows
+    - https://zetcode.com/golang/socket/
+    - https://stackoverflow.com/questions/42475093/go-raw-winsock
+    - https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/WinSock/windows-sockets-1-1-blocking-routines-and-einprogress-2.md
+    - https://medium.com/a-journey-with-go/go-builds-linkers-timeline-b312084ddf7d
+
 ## kala
 actualizar rama para dejar preparado el del liveness... 
 descargar de otro mail las cosas y guardar para mirar... en drive… 
