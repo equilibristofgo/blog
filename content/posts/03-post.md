@@ -1,6 +1,7 @@
 ---
 title: "Third Lightning Talk"
-date: 2022-10-12T19:00:00+02:00
+date: 2030-01-01T19:00:00+02:00
+draft: true
 ---
 
 # Temas a tratar en la tercera sesión
@@ -12,7 +13,7 @@ En golang existe el patron CSP que facilita mucho la concurrencia, pero de el ha
 
 ### Ejemplos de código 
 - La idea de estos ejemplos, es ver como con un ejemplo de codigo simplificado podemos pasar de:
-    - La necesidad de sincronizar el acceso a variables comunes, descubierto por unos test unitarios, corridos para detectar "race ocndition"
+    - La necesidad de sincronizar el acceso a variables comunes, descubierto por unos test unitarios, corridos para detectar "race condition"
     - ...
     - Ha como se puede reorganizar el codigo para dejar de usar los mutex y pasar al enfoque CSP.
     - Puedes ver la evolucion [aqui](https://github.com/equilibristofgo/sandbox/tree/feat/mutex_example/05_race_condition)
@@ -41,36 +42,21 @@ Aqui el tema esta, no solo para atributos sino paquetes enteros.
 ### Ejemplos de código 
 - [Aqui](https://github.com/equilibristofgo/sandbox/tree/main/04_internal/app)
 
-## Introducción a cgo
-Como podemos compilar nativo o para webassembly... y ademas como podemos compilar en linux para windows (o viceversa)
+## Gopls y los monorepos (con VSCode y muchos módulos Bazel y uno solo go.mod)
+Cuando tu proyecto es un monorepo gigante, todo empieza a ralentizarse ¿por que?. La idea es tratar de ver como se comporta el IDE (que en el caso de GoLang) suele delegar en Gopls.
+
+- ¿que hace Gopls cuando escanea un monorepo? 
+- ¿como se parametriza el ide para ese escaneo?
+- Si ademas el proyecto usa Bazel como se comporta el daemon ante los cambios que hace el IDE/¿gopls?
+- ¿Que integración LSP/Gopls tiene Bazel daemon con VSCode?
 
 - Links a organizar
-    - https://dh1tw.de/2019/12/cross-compiling-golang-cgo-projects/
-    - https://go.dev/blog/cgo 
-    - https://rotemtam.com/2020/10/30/bazel-building-cgo-bindings/ 
-    - https://freshman.tech/snippets/go/cross-compile-go-programs/
-    - https://blog.modest-destiny.com/posts/building-golang-cgo-with-bazel/
-    - https://egghead.io/lessons/go-configure-go-build-constraints-in-vs-code-to-work-with-webassembly
-    - https://github.com/AlekSi/cgo-by-example/blob/master/main.go
-    - https://riptutorial.com/go/example/21315/cgo--first-steps-tutorial
-    - https://stackoverflow.com/questions/16931700/is-it-possible-to-use-environment-variables-in-a-cgo-cflags-comment
-    - https://www.ardanlabs.com/blog/2013/08/using-cgo-with-pkg-config-and-custom.html
-    - https://zchee.github.io/golang-wiki/cgo/
-    - https://dave.cheney.net/2013/10/12/how-to-use-conditional-compilation-with-the-go-build-tool
-    - https://www.digitalocean.com/community/tutorials/customizing-go-binaries-with-build-tags-es
-    - https://www.digitalocean.com/community/tutorials/building-go-applications-for-different-operating-systems-and-architectures-es
-    - https://blog.marlin.org/cgo-referencing-c-library-in-go
-    - https://kofo.dev/build-tags-in-golang
-    - https://pkg.go.dev/cmd/cgo
-    - https://dh1tw.de/2019/12/cross-compiling-golang-cgo-projects/
-    - https://stackoverflow.com/questions/54048688/compiling-cgo-files-in-golang-package
-    - https://github.com/golang/net/blob/master/nettest/nettest_windows.go
-    - https://github.com/rogchap/networking/blob/master/02/digger.go
-    - https://pkg.go.dev/golang.org/x/sys/windows
-    - https://zetcode.com/golang/socket/
-    - https://stackoverflow.com/questions/42475093/go-raw-winsock
-    - https://github.com/MicrosoftDocs/win32/blob/docs/desktop-src/WinSock/windows-sockets-1-1-blocking-routines-and-einprogress-2.md
-    - https://medium.com/a-journey-with-go/go-builds-linkers-timeline-b312084ddf7d
+    - https://microsoft.github.io/language-server-protocol/
+    - https://github.com/golang/tools/tree/master/gopls
+    - https://github.com/bazelbuild/rules_go/wiki/Editor-setup
+    - https://github.com/bazelbuild/rules_go/wiki/Editor-and-tool-integration
+    - https://github.com/golang/tools/blob/master/gopls/doc/workspace.md
+    - https://stackoverflow.com/questions/55411277/how-can-i-setup-vscode-for-go-project-built-with-bazel
 
 ### Ejemplos de código 
 - [Aqui]()

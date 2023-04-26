@@ -1,6 +1,6 @@
 ---
 title: "12º Lightning Talk"
-date: 2023-02-14T19:00:00+02:00
+date: 2030-01-01T19:00:00+02:00
 draft: true
 ---
 
@@ -15,8 +15,12 @@ https://github.com/livekit/client-sdk-js/blob/main/example/sample.ts
 https://github.com/livekit/livekit-react/tree/master/example
 
 ## 
+https://github.com/tuneinsight/lattigo y hackeo con maquinas cuanticas
 
 ## 
+https://create.arduino.cc/projecthub/alankrantas/tinygo-on-arduino-uno-an-introduction-6130f6
+https://medium.com/vacatronics/lets-go-embedded-with-esp32-cb6bb3043bd0
+
 
 ## 
-
+https://exercism.org/tracks/go/concepts

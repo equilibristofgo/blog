@@ -92,7 +92,56 @@ El bot, simplemente recibe el comando y hace uso del codigo de [livekit-cli](htt
 ## Obs Broadcaster
 Y finalmente para la grabacion de todo el conjunto, la mejor herramienta es [OBS Studio](https://obsproject.com/)
 
+### Plugins
+https://medium.com/@mhatrep/remove-video-background-without-a-green-screen-in-obs-studio-f73735b40c65
+https://github.com/royshil/obs-backgroundremoval#linux
+https://github.com/royshil/obs-backgroundremoval/releases/tag/v0.3.0-beta
+    tar --use-compress-program=unzstd -xvf archive.tar.zst
+
+## Bonus - Livekit - Egress
+Como bonus, podemos ver como realizar la grabacion de las sesiones desde la parte servidora (el tipico boton de grabar la sesion)
+
+La parte de "performance" se puede testear con el [cli](https://github.com/livekit/livekit-cli)
+
+$ livekit-cli create-token --api-key devkey --api-secret secret --join --room my-first-room --identity user1 --valid-for 24h
+
+$ livekit-cli load-test --api-key devkey --api-secret secret --room my-first-room --publishers 8
+$ livekit-cli load-test --api-key devkey --api-secret secret --room my-first-room --subscribers 8
+
+Con esta opcion (y otras que se comentan) se pueden publicar videos (u otras fuentes...)
+$ livekit-cli join-room --room yourroom --identity publisher \
+  --publish path/to/video.ivf \
+  --publish path/to/audio.ogg \
+  --fps 23.98
+
+
+### Sobre la configuracion y envio de clips de video...
+https://livekit-users.slack.com/archives/C01KVTJH6BX/p1667980507127079?thread_ts=1667388123.288739&cid=C01KVTJH6BX
+
+
+Y ahora la parte especifica de [grabar](https://github.com/livekit/livekit-cli#recording--egress): start room composite (recording of room UI)
+$ livekit-cli start-room-composite-egress --request request.json
+
+{
+  "room_name": "my-room",
+  "track_id": "TR_XXXXXXXXXXXX",
+  "websocket_url": "wss://my-service.com"
+}
+
+La parte de instalacion de [egress](https://docs.livekit.io/guides/egress/) [indica](https://docs.livekit.io/deploy/egress/) que se debe desplegar el [codigo](https://github.com/livekit/egress) que [antiguamente](https://github.com/livekit/livekit-recorder), con esta [configuracion](https://github.com/livekit/egress/blob/main/test/config-sample.yaml)
+
+Ejecucion en [local](https://docs.livekit.io/deploy/egress/#running-locally)
+
+    log_level: debug
+    api_key: your-api-key
+    api_secret: your-api-secret
+    ws_url: ws://192.168.65.2:7880
+    insecure: true
+    redis:
+    address: 192.168.65.2:6379
+
+Para lo que se necesita un [Redis](https://redis.io/docs/getting-started/installation/install-redis-on-linux/) con una [configuracion](https://redis.io/docs/manual/config/) minima de de por ejemplo [256mb](https://blog.armesto.net/limitar-memoria-maxima-de-redis/)
+
 ## Grabacion de la sesion
-Con fallo de principiante, solo no grabe el audio del resto, solo el que salia de mi equipo.
-- https://www.youtube.com/...
-- https://www.ivoox.com/...
+Aunque se oye muy bajito, aqui queda algo del experimento...
+- https://youtu.be/svwN0O6WGcs
