@@ -31,7 +31,6 @@ https://softwareengineering.stackexchange.com/questions/361649/are-cqrs-and-hexa
 https://softwareengineering.stackexchange.com/questions/360850/where-should-i-place-configuration-classes-in-onion-architecture/360912#360912
 https://martinfowler.com/bliki/CQRS.html
 
+## Versionado/releasing en golang
 
-## sort
-https://pkg.go.dev/sort#example-package-SortKeys
 
