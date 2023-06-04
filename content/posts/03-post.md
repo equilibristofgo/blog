@@ -1,37 +1,15 @@
 ---
 title: "Third Lightning Talk"
-date: 2030-01-01T19:00:00+02:00
+date: 2023-06-02T19:00:00+02:00
 draft: true
 ---
 
 # Temas a tratar en la tercera sesión
 
-## Mutex
-En golang existe el patron CSP que facilita mucho la concurrencia, pero de el hablaremos otro dia, hoy simplemente nos quedamos con los mutex, que nos permiten sincronizar bloques de codigo usando objetos que permiten el bloqueo de lectura o lectura/escritura.
-
-...
-
-### Ejemplos de código 
-- La idea de estos ejemplos, es ver como con un ejemplo de codigo simplificado podemos pasar de:
-    - La necesidad de sincronizar el acceso a variables comunes, descubierto por unos test unitarios, corridos para detectar "race condition"
-    - ...
-    - Ha como se puede reorganizar el codigo para dejar de usar los mutex y pasar al enfoque CSP.
-    - Puedes ver la evolucion [aqui](https://github.com/equilibristofgo/sandbox/tree/feat/mutex_example/05_race_condition)
-
-## Testing api rest
-Golang tiene bien integrado en sus bases el mundo del testing, y para test de APIS rest, existe una utilidad para poder moquear los servidores de tal forma que podamos probar facilmente esas apis.
-
-Como ejemplo de proxy, realizado por la comunidad, tenemos a parte de los clasicos... a Killgrave.
-
-- Links a organizar
-    - https://github.com/intercloud/venom/tree/executor-tavern/executors/tavern
-    - https://github.com/friendsofgo/killgrave 
-
-### Ejemplos de código 
-- [Aqui]()
-
 ## Paquetería interna no exportable en go
-Aqui el tema esta, no solo para atributos sino paquetes enteros.
+En la sesión anterior hablamos sobre la [visibilidad]({{< ref "02-post#visibilidad" >}}) de los atributos. En este bloque hablaremos sobre la visibilidad de paquetes enteros...
+
+...para ello aprovecharemos a ver varios tipos de organizaciones clasiscas de paquetes, y como no podemos usar ciertos paquetes en otros...
 
 - Links a organizar
     - https://stackoverflow.com/questions/59342373/use-of-internal-package-not-allowed
@@ -41,6 +19,8 @@ Aqui el tema esta, no solo para atributos sino paquetes enteros.
 
 ### Ejemplos de código 
 - [Aqui](https://github.com/equilibristofgo/sandbox/tree/main/04_internal/app)
+
+
 
 ## Gopls y los monorepos (con VSCode y muchos módulos Bazel y uno solo go.mod)
 Cuando tu proyecto es un monorepo gigante, todo empieza a ralentizarse ¿por que?. La idea es tratar de ver como se comporta el IDE (que en el caso de GoLang) suele delegar en Gopls.
@@ -59,4 +39,44 @@ Cuando tu proyecto es un monorepo gigante, todo empieza a ralentizarse ¿por que
     - https://stackoverflow.com/questions/55411277/how-can-i-setup-vscode-for-go-project-built-with-bazel
 
 ### Ejemplos de código 
+- [Aqui](https://github.com/equilibristofgo/sandbox/tree/main/12_gopls)
+
+
+
+## Go Generate
+En la sesion anterior estuvimos hablando de [Code Generator]({{< ref "02-post#code_generator" >}}) y vimos por encima algunas herramientas...
+
+...veamos ahora una opcion nativa en go para generar codigo...
+
+- Links a organizar
+    - https://ehrt74.medium.com/go-generate-89b20a27f7f9
+
+### Ejemplos de código 
+- [Aqui](https://github.com/equilibristofgo/sandbox/tree/main/11_generate)
+
+
+
+## Testing api rest
+Golang tiene bien integrado en sus bases el mundo del testing, y para test de APIS rest, existe una utilidad para poder moquear los servidores de tal forma que podamos probar facilmente esas apis.
+
+...Como ejemplo de proxy, realizado por la comunidad, tenemos a parte de los clasicos... a Killgrave.
+
+- Links a organizar
+    - https://github.com/intercloud/venom/tree/executor-tavern/executors/tavern
+    - https://github.com/friendsofgo/killgrave 
+
+### Ejemplos de código 
 - [Aqui]()
+
+
+
+## Breves
+
+### sort
+https://pkg.go.dev/sort#example-package-SortKeys
+
+
+## Grabacion de la sesion
+...
+- [youtube]()
+- [ivoox]()

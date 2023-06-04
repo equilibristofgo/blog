@@ -144,4 +144,4 @@ Para lo que se necesita un [Redis](https://redis.io/docs/getting-started/install
 
 ## Grabacion de la sesion
 Aunque se oye muy bajito, aqui queda algo del experimento...
-- https://youtu.be/svwN0O6WGcs
+- [youtube](https://youtu.be/svwN0O6WGcs)

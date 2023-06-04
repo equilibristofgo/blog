@@ -87,5 +87,5 @@ https://github.com/chris-crone/containerized-go-dev
 
 ## Grabacion de la sesion
 Con fallo de principiante, solo no grabe el audio del resto, solo el que salia de mi equipo.
-- https://www.youtube.com/watch?v=yS1d4oQW66k
-- https://www.ivoox.com/podcast-equilibrist-of-go_sq_f11669874_1.html
+- [youtube](https://www.youtube.com/watch?v=yS1d4oQW66k)
+- [ivoox](https://www.ivoox.com/podcast-equilibrist-of-go_sq_f11669874_1.html)
