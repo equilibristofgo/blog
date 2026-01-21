@@ -6,14 +6,21 @@ on:
       - main  # Set a branch to deploy
   pull_request:
 
+# Permisos necesarios para el GITHUB_TOKEN moderno
+permissions:
+  contents: write
+
 jobs:
   deploy:
-    runs-on: ubuntu-20.04
+    # 1. Usar ubuntu-latest para evitar colas de versiones legacy
+    runs-on: ubuntu-latest
+    
     steps:
-      - uses: actions/checkout@v2
+      # 2. Actualizado a v4 (v2 usaba Node 12 que está deprecado)
+      - uses: actions/checkout@v4
         with:
-          submodules: true  # Fetch Hugo themes (true OR recursive)
-          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+          submodules: true  
+          fetch-depth: 0    
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
@@ -22,14 +29,11 @@ jobs:
           extended: true
 
       - name: Setup Node
-        uses: actions/setup-node@v3
+        # 3. Actualizado a v4 y Node 20 (LTS actual estándar)
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '20' 
           cache: 'npm'
-          # The action defaults to search for the dependency file (package-lock.json,
-          # npm-shrinkwrap.json or yarn.lock) in the repository root, and uses its
-          # hash as a part of the cache key.
-          # https://github.com/actions/setup-node/blob/main/docs/advanced-usage.md#caching-packages-data
           cache-dependency-path: '**/package-lock.json'
 
       - run: npm ci
