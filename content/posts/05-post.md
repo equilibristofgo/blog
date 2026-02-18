@@ -6,7 +6,11 @@ draft: true
 
 # Temas a tratar en la sesión 05
 
-## Versionado/releasing en golang
+
+## Charla interesante en una conferencia
+- Temas interesantes a revisar desde una charla de conferencia
+  - https://dave.cheney.net/practical-go/presentations/qcon-china.html
+  - https://www.youtube.com/channel/UCJ6wWvwujWtWegn4F69syZw/search?query=real
 
 ## Modelos (moldes para magdalenas)... Cuidado con los alérgicos al gluten 😅
 

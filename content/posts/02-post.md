@@ -40,7 +40,7 @@ por tanto si queremos almacenar mas de una... debemos aprovechar almacenar estru
     - Un ejemplo sencillo de como se almacenan y se estraen los elementos del contexto, a partir de ahi podemos usar el contexto como parametro entre metodos para hacerlo viajar asegurando su consistencia.
     - En el segundo ejemplo, vemos como podemos extender un contexto en otro, y acceder al contexto nativo a traves de otras implementaciones (a parte de ver como implementar un middleware proxy).
 
-## Visibilidades dentro y fuera de un paquete para los atributos
+## Visibilidades dentro y fuera de un paquete para los atributos {#visibilidad}
 Basicamente la regla se resume en, si esta en mayuscula ... es visible, pero sino, no... y eso aplica a todo, metodos, atributos...
 
 ```
@@ -90,7 +90,7 @@ relacionar el codigo go con c y viceversa.
 
 ## Breves
 
-### code generator
+### code generator {#code_generator}
 La generación de código (antes claro esta de la aparición de ChatGPT) siempre ha sido una opción para ciertas casuísticas, y tampoco tiene que ser mal mirado, puedes necesitar repetir ciertos soluciones en distintos lugares, por distintos motivos...
 
 - [A Yeoman Generator to Scaffold Golang-project](https://morioh.com/p/90906ca5c28e) Yeoman es una solución para generar proyectos de código completo siguiendo plantillas, como Helm para generar deployments en Kubernetes.
@@ -109,3 +109,8 @@ La generación de código (antes claro esta de la aparición de ChatGPT) siempre
 - Clasicos - Emacs
     - [emacs-lsp-go](https://geeksocket.in/posts/emacs-lsp-go/)
     - [emacs tour](https://dr-knz.net/a-tour-of-emacs-as-go-editor.html)
+
+## Grabacion de la sesion
+Pues con el experimento asincrono, y sin nadie que se animara a las preguntas...
+- [youtube](https://youtu.be/oiZLKqO72P0)
+- [ivoox](https://go.ivoox.com/rf/108219339)
