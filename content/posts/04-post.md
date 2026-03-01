@@ -22,6 +22,8 @@ Una vez tenia livekit y la opcion de grabar las sessiones, usaria los elementos 
 
 Ahora ya tenia las herramientas necesarias para entrar en el mundo de [LiveKit Agents](https://docs.livekit.io/agents/start/voice-ai-quickstart/) y partiendo del starte de python, y con mucha ayuda de Gemini, termine con un [agente](https://github.com/equilibristofgo/sandbox/blob/main/13_livekit_agent/src/agent_vision.py) conectado a la video conferencia, con orejas, boca y ojos, que gracias al LLM podia comentar cosas en mi charla.
 
+Puedes ver una demo de todo esto [aqui](https://youtu.be/5kLvXK_9vaw)
+
 ---
 
 ## Bloque 1: Cimientos y Paralelismo
