@@ -1,21 +1,20 @@
 ---
-title: "11º Lightning Talk"
+title: "9º Lightning Talk"
 date: 2030-01-01T19:00:00+02:00
 draft: true
 ---
 
-# Temas a tratar en la sesión 11
+# Temas a tratar en la sesión 09
 
-## Pointers
-https://stackoverflow.com/questions/59964619/difference-using-pointer-in-struct-fields
-https://github.com/golang/go/wiki/CodeReviewComments#pass-values
+## string pointers
+https://dhdersch.github.io/golang/2016/01/23/golang-when-to-use-string-pointers.html
 
-## Go-uring
-https://github.com/godzie44/go-uring/blob/master/example/echo-server-multi-thread/main.go
+## mock
+https://github.com/julien/moco
+https://github.com/vektra/mockery
 
-## Librerías fhe
+## Vulnerabiliades
+https://go.dev/blog/vuln
 
-## Aplicación para voto de día en el que quedar
-- https://github.com/josejuanmontiel/lattigo-polls-demo
-
-
+## frameworks
+https://github.com/zeromicro/go-zero

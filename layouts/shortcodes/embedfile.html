@@ -1,0 +1,18 @@
+{{ $path := .Get 0 }}
+{{ if hugo.IsServer }}
+  {{ $file := printf "static/sandbox/14_nyu_00/%s" $path }}
+  {{ $exists := (fileExists $file) }}
+  {{ if $exists }}
+    {{ $content := readFile $file }}
+    {{ $lang := cond (strings.HasSuffix $path ".go") "go" "text" }}
+    <div class="embedfile-wrapper" style="margin:0.5rem 0;">
+      {{ highlight $content $lang "linenos=table" | safeHTML }}
+    </div>
+  {{ else }}
+    <div class="embedfile-missing">Fichero no encontrado: {{ $file }}</div>
+  {{ end }}
+{{ else }}
+  <div class="embedfile-remote">
+    <a href="https://raw.githubusercontent.com/equilibristofgo/sandbox/feat/20260228/14_nyu_00/{{ $path }}" target="_blank" rel="noopener noreferrer">Ver {{ $path }} (raw)</a>
+  </div>
+{{ end }}

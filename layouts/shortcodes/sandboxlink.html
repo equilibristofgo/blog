@@ -1,0 +1,7 @@
+{{ $path := .Get 0 }}
+{{ $label := .Inner | safeHTML }}
+{{ if hugo.IsServer }}
+  <a href="{{ printf "sandbox/14_nyu_00/%s" $path | relURL }}" target="_blank" rel="noopener noreferrer">{{ $label }}</a>
+{{ else }}
+  <a href="https://github.com/equilibristofgo/sandbox/blob/feat/20260228/14_nyu_00/{{ $path }}" target="_blank" rel="noopener noreferrer">{{ $label }}</a>
+{{ end }}
