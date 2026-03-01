@@ -1,36 +1,30 @@
 ---
-title: "6º Lightning Talk"
+title: "Fourth Lightning Talk"
 date: 2030-01-01T19:00:00+02:00
 draft: true
 ---
 
-# Temas a tratar en la sesión 06
+# Temas a tratar en la cuarta sesión
 
-## Netpool
-https://www.sobyte.net/post/2021-09/golang-netpoll/
-https://developpaper.com/an-example-of-how-to-connect-millions-of-websockets-with-go/
-https://go.dev/src/runtime/netpoll.go
-https://go.dev/src/runtime/netpoll_windows.go
-https://www.cloudwego.io/blog/2021/10/09/bytedance-practices-on-go-network-library/
-https://programmer.group/5dc6d7d3c6146.html
-https://mosn.io/en/docs/concept/core-concept/
-https://github.com/cloudwego/netpoll
+## Mutex
+En golang existe el patron CSP que facilita mucho la concurrencia, pero de el hablaremos otro dia, hoy simplemente nos quedamos con los mutex, que nos permiten sincronizar bloques de codigo usando objetos que permiten el bloqueo de lectura o lectura/escritura.
+...
 
-## Containerized go
-https://github.com/chris-crone/containerized-go-dev
+### Ejemplos de código 
+- La idea de estos ejemplos, es ver como con un ejemplo de codigo simplificado podemos pasar de:
+    - La necesidad de sincronizar el acceso a variables comunes, descubierto por unos test unitarios, corridos para detectar "race condition"
+    - ...
+    - Ha como se puede reorganizar el codigo para dejar de usar los mutex y pasar al enfoque CSP.
+    - Puedes ver la evolucion [aqui](https://github.com/equilibristofgo/sandbox/tree/feat/mutex_example/05_race_condition)
 
+## Transaccionalidad de operaciones
+Si en un proyecto tienes microservicios de orquestación que por ejemplo actualizan datos en dos bases de datos, cada una de un micro distinto? Si quieres garantizar la coherencia de datos entre esas dos bases de datos. Si la primera llamada al micro1 va bien y la Segunda falla al micro2 que haces con los datos del micro1.. la pregunta de siempre jaja
 
-## Arquitectura hexagonal y DDD
-https://github.com/Arkiant/freegames
-https://github.com/looplab/eventhorizon
+https://github.com/seata/seata-go
+https://cadenceworkflow.io/docs/get-started/golang-hello-world/
 
-https://github.com/looplab/eventhorizon
-https://github.com/jetbasrawi/go.cqrs
-https://vaadin.com/blog/ddd-part-3-domain-driven-design-and-the-hexagonal-architecture
-https://softwareengineering.stackexchange.com/questions/361649/are-cqrs-and-hexagonal-architecture-incompatible
-https://softwareengineering.stackexchange.com/questions/360850/where-should-i-place-configuration-classes-in-onion-architecture/360912#360912
-https://martinfowler.com/bliki/CQRS.html
+### Injeccion de dependencias
+https://pkg.go.dev/go.uber.org/fxLibreria 
 
-## Versionado/releasing en golang
-
-
+## Ebiten
+https://ebiten.org/
