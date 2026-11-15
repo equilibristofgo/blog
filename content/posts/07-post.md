@@ -1,30 +1,28 @@
 ---
-title: "7º Lightning Talk"
+title: "5º Lightning Talk"
 date: 2030-01-01T19:00:00+02:00
 draft: true
 ---
 
-# Temas a tratar en la sesión 07
+# Temas a tratar en la sesión 05
 
-## MachineLearning
-https://docs.huihoo.com/go/fast-and-scalable-machine-learning-with-golang.pdf
-https://github.com/gopherdata/gophernotes
-https://haifengl.github.io/
-https://tribuo.org/
 
-## pipelines
-https://go.dev/blog/pipelines
-https://eapache.github.io/assets/Complex_Concurrency_Patterns_in_Go.pdf
-https://github.com/eapache/channels/
-https://github.com/zianwar/go-message-broker
-https://eli.thegreenplace.net/2020/pubsub-using-channels-in-go/
-https://trio.discourse.group/t/sizing-the-channel-deadlock-freedom-vs-back-pressure/311
-https://github.com/stimulussoft/filequeue
-https://blog.devgenius.io/implementing-go-stream-api-a74a6156ac35
+## Charla interesante en una conferencia
+- Temas interesantes a revisar desde una charla de conferencia
+  - https://dave.cheney.net/practical-go/presentations/qcon-china.html
+  - https://www.youtube.com/channel/UCJ6wWvwujWtWegn4F69syZw/search?query=real
 
-## enums
-https://threedots.tech/post/safer-enums-in-go/
+## Modelos (moldes para magdalenas)... Cuidado con los alérgicos al gluten 😅
 
-## Gestion de errores
-https://go.dev/blog/go1.13-errors
+## Concurrencia
+- Aportaciones al repo (original)
+    - https://github.com/josejuanmontiel/go-concurrency-patterns
+- Sobre hilos
+    - https://medium.com/@mukeshpilaniya/go-schedular-768c2246cdec
+    - https://www.kylehq.com/2016/09/lessons-in-golang-goroutines-and-channels/
 
+## Godog
+https://github.com/cucumber/godog/pull/466
+git checkout d8ff383
+git branch tag/v0.8_fix_go_1.18
+git cherry-pick 6f877d6b0344273e249fa0e2e3d768500540d9d6
