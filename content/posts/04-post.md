@@ -160,6 +160,6 @@ Mientras que las dos primeras sesiones se grabaron como sesiones de vídeo inter
 - [Grabación en Youtube (Sesión 3 - Redes Neuronales desde Cero con Gonum)](https://youtu.be/MJhAxBhwWLw)
 - [Grabación en Youtube (Sesión 4 - Redes a 60 FPS con Ebiten y WebAssembly)](https://youtu.be/V7Yi1aIkHKA)
 - [Grabación en Youtube (Sesión 5 - Del Cloud al Silicio Libre: RISC-V y RVV 1.0 en Kendryte K230)](https://youtu.be/-HztBkFKcoU)
-- [🔥 Documental Completo (1 Hora de Deep Learning en Go sobre Silicio Libre RISC-V)](https://youtu.be/e7C8aLB1fNU)
+- [🔥 Documental Completo (1 Hora de Deep Learning en Go sobre Silicio Libre RISC-V)](https://youtu.be/cJmDiFCgbiQ)
 - [Normas de la Comunidad y Código de Conducta](https://github.com/equilibristofgo/blog/blob/main/CODE_OF_CONDUCT.md)
 - [Podcast en iVoox]()
