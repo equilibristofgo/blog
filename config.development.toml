@@ -1,4 +1,4 @@
 [module]
   [[module.mounts]]
-    source = "/home/jose/workspace/personal/equilibristofgo/sandbox/14_nyu_00"
+    source = "/home/jose/workspace/equilibristofgo/sandbox/14_nyu_00"
     target = "static/sandbox/14_nyu_00"
