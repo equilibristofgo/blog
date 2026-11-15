@@ -1,7 +1,7 @@
 ---
 title: "Four Lightning Talk"
 date: 2026-02-23T19:00:00+02:00
-draft: true
+draft: false
 ---
 
 # Guion de Podcast: Go & Machine Learning (Sesión 04)

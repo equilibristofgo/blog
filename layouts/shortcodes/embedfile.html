@@ -1,5 +1,5 @@
 {{ $path := .Get 0 }}
-{{ if hugo.IsServer }}
+{{ if .Site.IsServer }}
   {{ $file := printf "static/sandbox/14_nyu_00/%s" $path }}
   {{ $exists := (fileExists $file) }}
   {{ if $exists }}
@@ -13,6 +13,6 @@
   {{ end }}
 {{ else }}
   <div class="embedfile-remote">
-    <a href="https://raw.githubusercontent.com/equilibristofgo/sandbox/feat/20260228/14_nyu_00/{{ $path }}" target="_blank" rel="noopener noreferrer">Ver {{ $path }} (raw)</a>
+    <a href="https://raw.githubusercontent.com/equilibristofgo/sandbox/main/14_nyu_00/{{ $path }}" target="_blank" rel="noopener noreferrer">Ver {{ $path }} (raw)</a>
   </div>
 {{ end }}
