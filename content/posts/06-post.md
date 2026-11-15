@@ -1,10 +1,10 @@
 ---
-title: "Fourth Lightning Talk"
+title: "Sixth Lightning Talk"
 date: 2030-01-01T19:00:00+02:00
 draft: true
 ---
 
-# Temas a tratar en la cuarta sesión
+# Temas a tratar en la sexta sesión
 
 ## Mutex
 En golang existe el patron CSP que facilita mucho la concurrencia, pero de el hablaremos otro dia, hoy simplemente nos quedamos con los mutex, que nos permiten sincronizar bloques de codigo usando objetos que permiten el bloqueo de lectura o lectura/escritura.
