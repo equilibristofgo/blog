@@ -156,4 +156,5 @@ Mientras que las dos primeras sesiones se grabaron como sesiones de vídeo inter
 - [Grabación en Youtube (Sesión 1)](https://www.youtube.com/watch?v=Ghk5mH8soaI)
 - [Grabación en Youtube (Sesión 2)](https://youtu.be/JyzpeTP6Jxw)
 - [Grabación en Youtube (Sesión 3 - Redes Neuronales desde Cero con Gonum)](https://youtu.be/MJhAxBhwWLw)
+- [Grabación en Youtube (Sesión 4 - Redes a 60 FPS con Ebiten y WebAssembly)](https://youtu.be/V7Yi1aIkHKA)
 - [Podcast en iVoox]()
